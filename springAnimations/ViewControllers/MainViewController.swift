@@ -38,6 +38,12 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func animationСhange() {
+        nextButton.animation = "pop"
+        nextButton.duration = 0.3
+        nextButton.force = 0.1
+        nextButton.delay = 0.1
+        nextButton.animate()
+        
         if counter < animations.count {
             impactFeedback.impactOccurred()
             settingAnimationAttributeName()
